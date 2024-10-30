@@ -8,36 +8,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+    <div class="contact-buttons">
+        <!-- Call Button -->
+         <a href="tel:9000054566" class="contact-button call" title="Call Us">
+            <i class="fas fa-phone icon"></i>
+        </a>
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/9000054566" target="_blank" class="contact-button whatsapp" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp icon"></i>
+        </a>
+    </div>
+
     <header class="header">
         <div class="limited-seats-banner">
             <h3>Limited Seats Available!</h3>
             <span> Sale Ends in </span>
             <span id="timer">00:00:00</span>
-            <button id="apply"> Apply Now !</button>
+            <button id="apply"> <a href="https://app.ninjapipe.com/forms/1189/cloudraize"> Apply Now ! </a> </button>
         </div>
-        <i class="fas fa-cloud"></i>
-        <h1>Cloudraize</h1>
-        <p>Accelerate Your DevOps Career with Our Comprehensive Courses!</p>
     </header>
-
+    
     <section class="attract">
-        <div class="attract-container">
-            <div class="ways">
-                <h3> 100% </h3>
-                <p> Job Gaurantee </p>
+        <div class="side-flex">
+            <div class="name-attract-flex">
+                <div id="name">
+                    <i class="fas fa-cloud"></i>
+                    <h1>Cloudraize</h1>
+                    <p id="devops">Accelerate Your Azure Career </p>
+                    <p> Become a professional AWS Solutions Architect in just 6 weeks</p>
+                </div>
+                <div class="notification">
+                    Application closes on 10 November 2024
+                </div>
+                <div class="main-button">
+                    <button> <a href="#flex-section-container" class="button know-more">Know More</a> </button>
+                    <button> <a href="https://app.ninjapipe.com/forms/1189/cloudraize" class="button apply-today">Apply Today</a> </button>
+                </div>
+                <div class="attract-container">
+                    <div class="ways">
+                        <h3>100%</h3>
+                        <p>Job Guarantee</p>
+                    </div>
+                    <div class="ways">
+                        <h3>20%</h3>
+                        <p>Salary Hike</p>
+                    </div>
+                    <div class="ways">
+                        <h3>#3</h3>
+                        <p>Top Market Skills</p>
+                    </div>
+                </div>
             </div>
-            <div class="ways">
-                <h3> 20% </h3>
-                <p> Salary Hike </p>
-            </div>
-            <div class="ways">
-                <h3> #3 </h3>
-                <p> Top Market Skills </p>
-            </div>
+            <img src="main.png" alt="Main page image" class="header-image">
         </div>
     </section>
+    
+<!-- Testimonials Section -->
+<div class="testimonials">
+    <section class="image-slider">
+        <h2>What Our Students Say</h2>
+        <div class="slider-container">
+            <img src="review1.jpeg" alt="Image 1" class="slide">
+            <img src="review2.jpeg" alt="Image 2" class="slide">
+            <img src="review3.jpeg" alt="Image 3" class="slide">
+        </div>
+    </section> 
+</div>
 
-    <section class="flex-section-container">
+    <section id="flex-section-container">
         <div class="section-container">
             <h2>Our Services</h2>
             <div class="flex-container">
@@ -171,21 +210,204 @@
 </section>
 </div>
 
-<!-- Testimonials Section -->
-<div class="testimonials">
-    <section class="image-slider">
-        <h2>What Our Students Say</h2>
-        <div class="slider-container">
-            <img src="review1.jpeg" alt="Image 1" class="slide">
-            <img src="review2.jpeg" alt="Image 2" class="slide">
-            <img src="review3.jpeg" alt="Image 3" class="slide">
-        </div>
-    </section> 
+<div class="curriculum">
+    <h2>6-Week Azure Curriculum</h2>
+    
+    <div class="week">
+        <span>Week 1: Azure Fundamentals</span>
+        <span class="toggle-icon">&#9660;</span>
+    </div>
+    <div class="topics">
+        <ul>
+            <li>Overview of Cloud Computing and Azure Basics</li>
+            <li>Cloud models: IaaS, PaaS, SaaS</li>
+            <li>Azure Portal and Resource Management</li>
+        </ul>
+    </div>
+    
+    <div class="week">
+        <span>Week 2: Core Services</span>
+        <span class="toggle-icon">&#9660;</span>
+    </div>
+    <div class="topics">
+        <ul>
+            <li>Compute Services: Azure Virtual Machines, Azure App Services</li>
+            <li>Storage and Networking Basics: Azure Blob Storage, VNets</li>
+        </ul>
+    </div>
+    
+    <div class="week">
+        <span>Week 3: Identity and Access Management</span>
+        <span class="toggle-icon">&#9660;</span>
+    </div>
+    <div class="topics">
+        <ul>
+            <li>Azure Active Directory (Azure AD) Basics</li>
+            <li>Security Essentials: MFA, Identity Protection</li>
+            <li>Resource Security: NSGs and Firewall Rules</li>
+        </ul>
+    </div>
+    
+    <div class="week">
+        <span>Week 4: Databases and Analytics</span>
+        <span class="toggle-icon">&#9660;</span>
+    </div>
+    <div class="topics">
+        <ul>
+            <li>Database Solutions: Azure SQL Database, Cosmos DB</li>
+            <li>Data Analytics Introduction: Synapse Analytics, Data Factory</li>
+        </ul>
+    </div>
+    
+    <div class="week">
+        <span>Week 5: Monitoring, Automation, and DevOps Basics</span>
+        <span class="toggle-icon">&#9660;</span>
+    </div>
+    <div class="topics">
+        <ul>
+            <li>Monitoring and Management: Azure Monitor, Application Insights</li>
+            <li>Automation: Azure Automation and Runbooks</li>
+            <li>DevOps Essentials: CI/CD and Azure Pipelines</li>
+        </ul>
+    </div>
+    
+    <div class="week">
+        <span>Week 6: Security and Exam Preparation</span>
+        <span class="toggle-icon">&#9660;</span>
+    </div>
+    <div class="topics">
+        <ul>
+            <li>Security and Compliance: Security Center, Azure Defender</li>
+            <li>Certification Pathways: AZ-900 Fundamentals Exam</li>
+            <li>Wrap-Up and Hands-On Practice</li>
+        </ul>
+    </div>
+    
 </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Cloudraize. All Rights Reserved.</p>
-    </footer>
+<section class="case-studies-section">
+    <h2>Real-Life Case Studies</h2>
+    <p>Explore real-world applications and hands-on scenarios that reflect industry challenges and solutions.</p>
+    <div class="case-studies-container">
+        <div class="case-study">
+            <img src="automation.png" alt="Automating Deployment with Jenkins & Docker">
+            <div class="case-study-content">
+                <h3>Automating Deployment with Jenkins & Docker</h3>
+                <p>Learn how Jenkins and Docker streamlined deployments, reducing errors and improving deployment speed.</p>
+            </div>
+        </div>
+        <div class="case-study">
+            <img src="cloud.png" alt="Cloud Infrastructure with AWS & Terraform">
+            <div class="case-study-content">
+                <h3>Cloud Infrastructure with AWS & Terraform</h3>
+                <p>See how AWS and Terraform were used to create scalable infrastructure for a high-demand application.</p>
+            </div>
+        </div>
+        <div class="case-study">
+            <img src="grafana_monitoring.png" alt="Monitoring Systems with Grafana & Prometheus">
+            <div class="case-study-content">
+                <h3>Monitoring Systems with Grafana & Prometheus</h3>
+                <p>Discover how Grafana and Prometheus enhanced system monitoring and alerting for improved performance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <h2>General FAQs</h2>
+    <p>Everything you need to know</p>
+    <div class="faq">
+        <div class="faq-item">
+            <div class="question">
+                <span>What is the AWS Solutions Architect Micro Degree, and who is it designed for?</span>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+                <p>The AWS Solutions Architect Micro Degree is an online, instructor-led LIVE program designed for individuals aiming to become proficient AWS Solutions Architects. It's suitable for beginners and those with some programming experience.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <span>Micro Degree course is live or recorded?</span>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+                <p>The Micro Degree course is an online LIVE course. Prior to the start, you'll receive preparatory material in the form of recorded content accessible on the platform.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <span>In what language will the course be taught?</span>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+                <p>The course will be conducted in English by the instructors.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <span>How do I access course details and learning materials after registration?</span>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+                <p>After registration, you’ll receive a confirmation email with login details and a PDF guide for accessing live sessions and materials on the Edyoda Classroom platform.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <span>Do I need to have prior programming experience to enroll?</span>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+                <p>No prior programming experience is required. The course is suitable for beginners and those with some programming background.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <span>Who are the instructors, and what is their experience?</span>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+                <p>Our instructors are industry experts with at least 4 years of technical and teaching experience. They bring both practical knowledge and industry insights.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <span>What is the cost of the course, and are there any discounts available?</span>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+                <p>The course is currently available for ₹1450 + GST (discounted from ₹14,500). Keep an eye on our website for additional promotions.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <span>Will there be assignments, assessments, or a final project in the course?</span>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+                <p>Yes, the course includes assignments, quizzes, and a final project to reinforce your learning and assess proficiency.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <span>Can I interact with instructors and fellow students during the course?</span>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+                <p>Yes, there are discussion forums and live Q&A sessions to foster a supportive learning community.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <script src="script.js"></script>
 </body>

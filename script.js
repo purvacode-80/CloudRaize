@@ -17,3 +17,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(updateTimer, 1000);
 });
+
+document.querySelectorAll('.faq-item .question').forEach(item => {
+    item.addEventListener('click', () => {
+        const faqItem = item.parentNode;
+        faqItem.classList.toggle('active');
+    });
+});
+
+document.querySelectorAll('.week').forEach(week => {
+    week.addEventListener('click', () => {
+        const topics = week.nextElementSibling;
+        topics.style.display = topics.style.display === 'block' ? 'none' : 'block';
+        week.classList.toggle('expanded');
+    });
+});
