@@ -157,8 +157,8 @@ body {
 }
 
 .limited-seats-banner {
-    background-color: #b1f447;
-    color: rgb(19, 19, 19);
+    background-color: #1af069;
+    color: rgb(29, 29, 29);
     padding: 10px;
     border-radius: 8px;
     /* max-width: 450px; */
@@ -213,8 +213,8 @@ color: #121212;
 
 .course-item {
     flex: 1 1 calc(33.333% - 10px);
-    background-color: #f8ee9c;
-    color: #2a2828;
+    background-color: #f27338;
+    color: #f9f9f9;
     padding: 10px;
     border-radius: 4px;
     text-align: center;
