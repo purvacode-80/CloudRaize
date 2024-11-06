@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
 
@@ -43,40 +43,63 @@ body {
 #name {
     text-align: left;
     margin-bottom: 10px;
+    color: #ddd;
 }
 
 #name #devops {
     font-size: 2em;
     margin-bottom: 3px;
+}
+
+#name h1 {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 3em;
+    display: inline;
     color: #f0f0f5;
 }
 
-/* Attract Container Styling */
+#name p {
+    font-size: 1.5em;
+    color: #9cf5f8;
+}
+
+#name i {
+    font-size: 40px; /* Adjust icon size */
+    margin-bottom: 10px; /* Space between icon and text */
+    display: inline;
+    margin-right: 10px;
+}
+
 .attract-container {
+    text-align: center;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
     background-color: rgb(209, 64, 64);
     color: cornsilk;
-    padding: 10px;
-    border-radius: 8px;
+    /* max-width: 450px; */
     box-shadow: 0 4px 12px rgb(202, 240, 248);
-    text-align: center;
+    max-width: fit-content;
+    padding: 10px 20px;
+    margin-bottom: 20px;
 }
 
-.attract {
-    color: floralwhite;
-    padding: 20px;
-}
-
-/* Ways Content in Attract Container */
 .ways h3 {
-    font-weight: 600;
-    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: Impact;
+    font-weight: 400;
+    font-size: 2em;
     color: rgb(248, 234, 157);
 }
 
 .ways p {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 /* Image Styling */
@@ -97,26 +120,6 @@ body {
     text-align: center;
     width: fit-content;
     margin: auto;
-}
-
-#name h1 {
-    font-family: "DynaPuff", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 3em;
-    display: inline;
-}
-
-#name p {
-    font-size: 1.5em;
-    color: #9cf5f8;
-}
-
-#name i {
-    font-size: 40px; /* Adjust icon size */
-    margin-bottom: 10px; /* Space between icon and text */
-    display: inline;
-    margin-right: 10px;
 }
 
 .contact-buttons {
@@ -258,6 +261,13 @@ color: #121212;
     margin-top: 10px;
 }
 
+.instructor-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .instructor-section {
     padding: 40px;
     text-align: center;
@@ -286,6 +296,26 @@ color: #121212;
 .instructor-info p {
     font-size: 1rem;
     color: #333;
+}
+
+.listen-instructor-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.instructor-video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    max-height: 700px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Testimonial Section */
@@ -436,36 +466,6 @@ color: #121212;
     margin-bottom: 10px; /* Space between icon and text */
 }
 
-.attract-container {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-    background-color: rgb(209, 64, 64);
-    color: cornsilk;
-    /* max-width: 450px; */
-    box-shadow: 0 4px 12px rgb(202, 240, 248);
-    max-width: fit-content;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-}
-
-.ways h3 {
-    font-weight: 600;
-    margin-bottom: 5px;
-    font-family: "Rubik Wet Paint", system-ui;
-    font-weight: 400;
-    font-size: 2em;
-    color: rgb(248, 234, 157);
-}
-
-.ways p {
-    font-size: 1.5em;
-}
-
 .curriculum {
     max-width: 600px;
     width: 100%;
@@ -479,6 +479,11 @@ color: #121212;
 
 .curriculum h2 {
     text-align: center;
+}
+
+.week-icon {
+    margin-right: 8px;
+    color: #555;
 }
 
 .week {
