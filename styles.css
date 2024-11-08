@@ -23,6 +23,11 @@ body {
     text-align: center;
 }
 
+.logo-image {
+    max-width: 500px;
+    height: auto;
+}
+
 /* Flex Layout for Side Flex */
 .side-flex {
     display: flex;
@@ -325,9 +330,7 @@ color: #121212;
 
 .image-slider {
     position: relative;
-    width: 100%; 
-    /* max-width: 800px;
-    height: 400px; */
+    width: 100%;
     overflow: hidden;
     margin: auto;
     margin-bottom: 20px;
@@ -339,22 +342,22 @@ color: #121212;
 }
 
 .slider-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
     display: flex;
-    justify-content: space-around;
+    width: 200%; /* Double the container width for continuous loop */
+    animation: slide 20s linear infinite;
 }
 
 .slide {
-    /* position: absolute; */
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
+    width: 33.33%; /* Each image takes up one-third of 100% */
+    max-width: 100%;
     height: 200px;
-    /* opacity: 0; */
-    /* animation: fade 15s infinite; */
+    margin-right: 2em;
+}
+
+/* Keyframes for continuous sliding animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Slide halfway (the duplicate set) */
 }
 
 /* Delay for each slide */
@@ -625,6 +628,28 @@ color: #121212;
     transform: rotate(180deg);
 }
 
+.contact-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #121212;
+    color: #f9f9f9;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #66bdec;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 
 
 
@@ -699,6 +724,10 @@ color: #121212;
     height: 150px;
 }
 
+.logo-image {
+    max-width: 300px;
+}
+
 .header h1 {
     font-size: 2em;
 }
@@ -735,3 +764,4 @@ color: #121212;
     font-size: 0.85rem;
 }
 }
+
