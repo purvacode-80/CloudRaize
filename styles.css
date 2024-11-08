@@ -715,7 +715,7 @@ color: #121212;
 } */
 
 .slider-container {
-    display: block;
+    /* display: block; */
     padding: 10px;
 }
 
